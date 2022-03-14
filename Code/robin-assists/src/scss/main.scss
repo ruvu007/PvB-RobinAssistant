@@ -5,6 +5,12 @@
 @import "components/nav";
 @import "components/landingheader";
 @import "components/copy";
+@import "components/convinceyoulogin";
+@import "components/contact";
+
+html, body {
+    overflow-x: hidden;
+}
 
 body {
     color: $black;
@@ -12,6 +18,12 @@ body {
 
 p {
     font-size: 13px;
+}
+
+.robinassistantgreen-bg {
+    color: $white;
+    background-color: $robinAssistantGreen;
+    padding: 5rem 0;
 }
 
 @media (min-width: 1900px) {

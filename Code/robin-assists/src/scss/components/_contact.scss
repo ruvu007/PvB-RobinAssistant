@@ -1,0 +1,35 @@
+.contact {
+    form {
+        label {
+            display: block;
+
+            &[for="tos"] {
+                display: inline;
+            }
+        }
+
+        textarea {
+            margin: 0.5rem 0;
+        }
+
+        input {
+            margin: 0.5rem 0;
+            width: 100%;
+
+            &[type="submit"] {
+                background-color: $robinAssistantGreen;
+                border: none;
+                width: 35%;
+                padding: 0.5rem;
+                border-radius: 5px;
+                color: $white;
+            }
+
+            &[type="checkbox"] {
+                display: inline;
+                width: 5%;
+                text-align: left;
+            }
+        }
+    }
+}
