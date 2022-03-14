@@ -11,7 +11,7 @@
     }
 
     .welcome-text {
-        width: 30rem;
+        width: 50%;
     }
 
     .continue-button {
@@ -25,5 +25,6 @@
         color: $white;
         font-weight: bold;
         margin-top: 2rem;
+        border: none;
     }
 }

@@ -1,8 +1,4 @@
 .copy {
-    &:has(.robinassistantgreen-bg) {
-        background-color: #f7f7ff;
-    }
-
     img {
         max-width: 100%;
 
@@ -20,7 +16,7 @@
         padding-bottom: 40px;
     }
 
-    h5 {
+    h4 {
         font-weight: bold;
         padding-top: 10px;
     }

@@ -3,6 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url("assets/images/overtuigdachtergrond.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .login-button {
@@ -21,7 +25,8 @@
 .overtuigd-title {
     color: $white;
     font-weight: bold;
-    width: 58rem;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .cyl-tekst {
