@@ -1,0 +1,28 @@
+#nav {
+    @media screen and (min-width: $medium) {
+        display: flex;
+        align-items: center;
+    }
+
+
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+    
+    a {
+        text-decoration: none;
+        color: $black;
+        padding: 0 21px;
+    
+        &.cta-button {
+            display: inline-block;
+            width: 10rem;
+            padding: 0.6rem 0;
+            text-align: center;
+            border-radius: 14px;
+            background-color: $robinAssistantGreen;
+            color: $white;
+        }
+    }
+}
