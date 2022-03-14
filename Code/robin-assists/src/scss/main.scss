@@ -11,6 +11,11 @@ body {
     color: $black;
 }
 
+.robinassistantgreen-bg {
+    background-color: $robinAssistantGreen;
+    padding: 5rem 0;
+}
+
 @media (min-width: 1900px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1650px;

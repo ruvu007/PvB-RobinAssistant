@@ -77,6 +77,54 @@
     </v-copy>
 
     <v-convince-you-login></v-convince-you-login>
+
+    <div class="robinassistantgreen-bg">
+      <v-copy>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-3">
+              <h4>Hoe werkt het?</h4>
+            </div>
+            <div class="col-12 col-lg-3 offset-lg-1">
+              <h4>Online dashboard</h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-lg-3">
+              <p>De dienst bestaat uit twee delen: Het online dashboard voor de verzorgers en de mobiele app voor de persoon die bijzondere zorg nodig heeft.</p>
+              <ul>
+                <li>Online Dashboard</li>
+                <li>Mobiele App</li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-4 offset-lg-1">
+              <p>De verzorger heeft toegang tot Robin via de website www.robinassist.mevanaf een computer of een ander apparaat met internettoegang en kan inloggen op zijn persoonlijke dashboard. Daar kunnen ze de taken van de persoon voor de dag, week of zelfs de hele maand programmeren, met de optie om ze op elk moment te wijzigen. Ze kunnen bijvoorbeeld de volgorde van de activiteiten en de duur van elke stap configureren voor één of meerdere personen. Bovendien kunnen ze een actie instellen voor de knop “paniek”. Deze actie kan rechtstreeks vanuit de Robin app bellen, sms’en of een e-mailbericht sturen naar een speciaal persoon (de verzorger of een familielid van de persoon).</p>
+            </div>
+            <div class="col-12 col-lg-3 offset-lg-1">
+              <img src="@/assets/images/youtubelogo.png" alt="YouTube Logo">
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-12 col-lg-3">
+              <img src="@/assets/images/patienttekent.png" alt="Patient tekent een tekening en kleurt hem in">
+            </div>
+
+            <div class="col-12 col-lg-4 offset-lg-1">
+              <div class="telefoon-iconimage">
+                <img src="@/assets/images/telefoonapp.png" alt="Telefoon Icoon">
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3 offset-lg-1">
+              <h4>Mobiele App</h4>
+              <p>De activiteiten die de verzorger in het online dashboard programmeert, worden naar de Robin app van de persoon gestuurd. Wanneer het tijd is om een activiteit uit te voeren, zal de app de persoon op de hoogte stellen via een waarschuwing of melding. Dit zal hen vragen om de geplande activiteit te openen in de Robin app, die automatisch elke stap toont die moet worden gevolgd om de activiteit te voltooien. Elke stap wordt zorgvuldig uitgelegd met spraak, tekst en afbeeldingen. Robin geeft ook aan hoeveel tijd de persoon maximaal mag nemen voor elke stap en laat hem de instructie van elke stap herhalen, indien nodig. Nadat alle stappen in de activiteit zijn voltooid, keert de Robin app terug naar de kalender om de geplande taken voor die dag of week te tonen. Wanneer de applicatie wordt gesloten, blijft deze inactief totdat het tijd is voor een nieuwe activiteit.</p>
+            </div>
+          </div>
+        </div>
+      </v-copy>
+    </div>
   </div>
 </template>
 
