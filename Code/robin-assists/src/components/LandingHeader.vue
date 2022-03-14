@@ -1,6 +1,6 @@
 <template>
-    <div class="landingheader">
-        <div class="landingheader-text">
+    <div class="landingheader" :style="{'background-image':'url(https://cdn.discordapp.com/attachments/618177603202842667/952999192102572052/AdobeStock_301664373.png)'}">
+        <div class="welcome-text">
             <h1>Robin Assistant service,
                 jouw dagelijkse assistent
             </h1>

@@ -1,5 +1,33 @@
 .copy {
+    background-color: #f7f7ff;
+
     img {
         max-width: 100%;
+    }
+
+    .title {
+        font-weight: bold;
+    }
+
+    .text-box {
+        padding-top: 80px;
+    }
+
+    h5 {
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
+    .icon {
+        width: 13%;
+    }
+
+    .text-box4 {
+        padding-right: 55px;
+    }
+
+    .img {
+        width: 88%;
+        padding-top: 1rem;
     }
 }
