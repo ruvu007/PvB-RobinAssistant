@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="container-fluid">
+    <div class="container-fluid" id="Home">
       <div class="row">
         <div id="nav">
           <div class="col-12 col-md-2 col-lg-2">
@@ -129,7 +129,9 @@
       </v-copy>
     </div>
 
-    <v-contact></v-contact>
+    <v-contact id="Contact"></v-contact>
+
+    <v-footer @scrollTo="(component) => scrollTo(component)"></v-footer>
   </div>
 </template>
 
@@ -139,6 +141,7 @@ import LandingHeader from '@/components/LandingHeader.vue'
 import Copy from '@/components/Copy.vue'
 import ConvinceYouLogin from '@/components/ConvinceYouLogin.vue'
 import Contact from '@/components/Contact.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
@@ -147,12 +150,14 @@ export default {
     'v-landing-header': LandingHeader,
     'v-copy': Copy,
     'v-convince-you-login': ConvinceYouLogin,
-    'v-contact': Contact
+    'v-contact': Contact,
+    'v-footer': Footer
   },
 
   methods: {
     scrollTo (component) {
       document.getElementById(component).scrollIntoView()
+      // console.log(component)
     }
   }
 }

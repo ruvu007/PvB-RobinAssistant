@@ -18,7 +18,7 @@
                         <label for="phonenumber">Telefoon nummer</label>
                         <input type="tel" id="phonenumber">
 
-                        <label for="message">Message*</label>
+                        <label for="message">Bericht*</label>
                         <textarea id="message" cols="54" rows="10"></textarea>
                         <br />
                         <input type="checkbox" id="tos">
