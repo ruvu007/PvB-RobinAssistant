@@ -1,28 +1,49 @@
 #nav {
+    padding: 10px 0;
+
     @media screen and (min-width: $medium) {
         display: flex;
         align-items: center;
     }
 
+    @media screen and (min-width: $large) {
+        .nav-links {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 807px) {
+        text-align: center;
+    }
 
     img {
         margin: 0 auto;
         display: block;
+        width: 100%;
+        // Standard Logo Sizes
+        max-width: 145px;
+        max-height: 69px;
     }
     
-    a {
+    button {
         text-decoration: none;
+        background-color: transparent;
+        border: none;
+        white-space: nowrap;
         color: $black;
-        padding: 0 21px;
-    
-        &.cta-button {
-            display: inline-block;
-            width: 10rem;
-            padding: 0.6rem 0;
-            text-align: center;
-            border-radius: 14px;
-            background-color: $robinAssistantGreen;
-            color: $white;
-        }
+        padding: 0 25px;
+    }
+
+    a.cta-button {
+        display: inline-block;
+        text-decoration: none;
+        width: 10rem;
+        padding: 0.6rem 0;
+        text-align: center;
+        border-radius: 14px;
+        background-color: $robinAssistantGreen;
+        color: $white;
     }
 }

@@ -3,7 +3,15 @@
 @import "base/settings";
 
 @import "components/nav";
+@import "components/landingheader";
+@import "components/copy";
 
-div {
-    display: inline-block;
+body {
+    color: $black;
+}
+
+@media (min-width: 1900px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1650px;
+    }
 }
