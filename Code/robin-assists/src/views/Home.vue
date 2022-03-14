@@ -75,6 +75,8 @@
         </div>
       </div>
     </v-copy>
+
+    <v-convince-you-login></v-convince-you-login>
   </div>
 </template>
 
@@ -82,13 +84,15 @@
 // @ is an alias to /src
 import LandingHeader from '@/components/LandingHeader.vue'
 import Copy from '@/components/Copy.vue'
+import ConvinceYouLogin from '@/components/ConvinceYouLogin.vue'
 
 export default {
   name: 'Home',
 
   components: {
     'v-landing-header': LandingHeader,
-    'v-copy': Copy
+    'v-copy': Copy,
+    'v-convince-you-login': ConvinceYouLogin
   },
 
   methods: {
