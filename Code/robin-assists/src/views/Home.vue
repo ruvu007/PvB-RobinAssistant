@@ -125,6 +125,8 @@
         </div>
       </v-copy>
     </div>
+
+    <v-contact></v-contact>
   </div>
 </template>
 
@@ -133,6 +135,7 @@
 import LandingHeader from '@/components/LandingHeader.vue'
 import Copy from '@/components/Copy.vue'
 import ConvinceYouLogin from '@/components/ConvinceYouLogin.vue'
+import Contact from '@/components/Contact.vue'
 
 export default {
   name: 'Home',
@@ -140,7 +143,8 @@ export default {
   components: {
     'v-landing-header': LandingHeader,
     'v-copy': Copy,
-    'v-convince-you-login': ConvinceYouLogin
+    'v-convince-you-login': ConvinceYouLogin,
+    'v-contact': Contact
   },
 
   methods: {

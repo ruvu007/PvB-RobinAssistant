@@ -6,12 +6,18 @@
 @import "components/landingheader";
 @import "components/copy";
 @import "components/convinceyoulogin";
+@import "components/contact";
+
+html, body {
+    overflow-x: hidden;
+}
 
 body {
     color: $black;
 }
 
 .robinassistantgreen-bg {
+    color: $white;
     background-color: $robinAssistantGreen;
     padding: 5rem 0;
 }
