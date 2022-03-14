@@ -1,5 +1,7 @@
 .copy {
-    background-color: #f7f7ff;
+    &:has(.robinassistantgreen-bg) {
+        background-color: #f7f7ff;
+    }
 
     img {
         max-width: 100%;
