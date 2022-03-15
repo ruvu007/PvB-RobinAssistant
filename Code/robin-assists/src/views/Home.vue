@@ -48,7 +48,7 @@
     <v-copy id="Voordelen">
       <div class="container text-box">
         <div class="row">
-          <div class="col-12 col-lg-4">
+          <div class="col-12 d-none d-lg-block col-lg-4">
             <img class="img" src="@/assets/images/Voordelen.png" alt="Een mevrouw die helpt middels RobinAssistant">
           </div>
           <div class="col-12 col-lg-4">
@@ -56,6 +56,7 @@
               <img class="icon" src="@/assets/icons/VoordelenIcon.png" alt="Icon - Voordelen">
               <h4>Voordelen</h4>
               <p>Robin heeft verschillende voordelen om uw dagelijks leven zo aangenaam mogelijk te maken. Wat zijn de voordelen van Robin Assistent en waarom zou je het gebruiken?</p>
+              <br />
             </div>
             <div class="text-box2">
               <img class="icon" src="@/assets/icons/OnafhankelijkheidIcon.png" alt="Icon - Onafhankelijkheid">
@@ -66,7 +67,7 @@
           <div class="col-12 col-lg-4">
             <div class="text-box2">
               <img class="icon" src="@/assets/icons/RoutineIcon.png" alt="Icon - Dagelijkse Routine">
-              <h5>Dagelijkse routines</h5>
+              <h4>Dagelijkse routines</h4>
               <p>Doordat het individu niet meer zo afhankelijk is van de verzorger hebben ze meer routine. De dagelijkse activiteiten worden op vaste tijdstippen gedaan en kunnen dan zelfstandig door het individu worden uitgevoerd.</p>
             </div>
             <div class="text-box2">
