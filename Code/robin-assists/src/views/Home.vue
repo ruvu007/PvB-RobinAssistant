@@ -3,11 +3,11 @@
     <div class="container-fluid" id="Home">
       <div class="row">
         <div id="nav">
-          <div class="col-12 col-md-2 col-lg-2">
+          <div class="col-12 col-md-12 col-lg-2 col-xl-">
             <!-- Logo Robin Assistant -->
             <img src="@/assets/images/logo2.png" alt="Het logo van Robin Assistant">
           </div>
-          <div class="col-12 col-md-10 col-lg-9">
+          <div class="col-12 col-md-12 col-lg-10 col-xl-9 offset-xl-0">
             <div class="nav-links">
               <button @click="scrollTo('WatIsRobin')">Wat is Robin?</button>
               <button @click="scrollTo('Voordelen')">Voordelen</button>
@@ -56,7 +56,6 @@
               <img class="icon" src="@/assets/icons/VoordelenIcon.png" alt="Icon - Voordelen">
               <h4>Voordelen</h4>
               <p>Robin heeft verschillende voordelen om uw dagelijks leven zo aangenaam mogelijk te maken. Wat zijn de voordelen van Robin Assistent en waarom zou je het gebruiken?</p>
-              <br />
             </div>
             <div class="text-box2">
               <img class="icon" src="@/assets/icons/OnafhankelijkheidIcon.png" alt="Icon - Onafhankelijkheid">
