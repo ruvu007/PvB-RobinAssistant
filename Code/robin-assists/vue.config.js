@@ -1,6 +1,6 @@
 module.exports = {
-    chainWebpack: config => {
-      config
+  chainWebpack: config => {
+    config
       .plugin('html')
       .tap(args => {
         //   Document title
