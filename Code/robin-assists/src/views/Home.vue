@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="container-fluid">
+    <div class="container-fluid" id="Home">
       <div class="row">
         <div id="nav">
           <div class="col-12 col-md-2 col-lg-2">
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <v-landing-header></v-landing-header>
+    <v-landing-header @scrollTo="(component) => scrollTo(component)"></v-landing-header>
 
     <v-copy id="WatIsRobin">
       <div class="container text-box">
@@ -48,30 +48,31 @@
     <v-copy id="Voordelen">
       <div class="container text-box">
         <div class="row">
-          <div class="col-12 col-lg-4">
+          <div class="col-12 d-none d-lg-block col-lg-4">
             <img class="img" src="@/assets/images/Voordelen.png" alt="Een mevrouw die helpt middels RobinAssistant">
           </div>
           <div class="col-12 col-lg-4">
             <div class="text-box2">
               <img class="icon" src="@/assets/icons/VoordelenIcon.png" alt="Icon - Voordelen">
-              <h5>Voordelen</h5>
+              <h4>Voordelen</h4>
               <p>Robin heeft verschillende voordelen om uw dagelijks leven zo aangenaam mogelijk te maken. Wat zijn de voordelen van Robin Assistent en waarom zou je het gebruiken?</p>
+              <br />
             </div>
             <div class="text-box2">
               <img class="icon" src="@/assets/icons/OnafhankelijkheidIcon.png" alt="Icon - Onafhankelijkheid">
-              <h5>Onafhankelijkheid</h5>
+              <h4>Onafhankelijkheid</h4>
               <p>Robin helpt bij het zelfstandig uitvoeren van dagelijkse activiteiten door stapsgewijze begeleiding te geven. Hierdoor is het individu een stuk onafhankelijker dan zonder het gebruik van Robin.</p>
             </div>
           </div>
           <div class="col-12 col-lg-4">
             <div class="text-box2">
               <img class="icon" src="@/assets/icons/RoutineIcon.png" alt="Icon - Dagelijkse Routine">
-              <h5>Dagelijkse routines</h5>
+              <h4>Dagelijkse routines</h4>
               <p>Doordat het individu niet meer zo afhankelijk is van de verzorger hebben ze meer routine. De dagelijkse activiteiten worden op vaste tijdstippen gedaan en kunnen dan zelfstandig door het individu worden uitgevoerd.</p>
             </div>
             <div class="text-box2">
               <img class="icon" src="@/assets/icons/DashboardIcon.png" alt="Icon - Dashboard">
-              <h5>Dashboard management</h5>
+              <h4>Dashboard management</h4>
               <p>Via het dashboard kan de verzorger heel makkelijk de taken van de persoon programmeren en op elk moment wijzigen.</p>
             </div>
           </div>
@@ -104,23 +105,23 @@
             <div class="col-12 col-lg-4 offset-lg-1">
               <p>De verzorger heeft toegang tot Robin via de website www.robinassist.mevanaf een computer of een ander apparaat met internettoegang en kan inloggen op zijn persoonlijke dashboard. Daar kunnen ze de taken van de persoon voor de dag, week of zelfs de hele maand programmeren, met de optie om ze op elk moment te wijzigen. Ze kunnen bijvoorbeeld de volgorde van de activiteiten en de duur van elke stap configureren voor één of meerdere personen. Bovendien kunnen ze een actie instellen voor de knop “paniek”. Deze actie kan rechtstreeks vanuit de Robin app bellen, sms’en of een e-mailbericht sturen naar een speciaal persoon (de verzorger of een familielid van de persoon).</p>
             </div>
-            <div class="col-12 col-lg-3 offset-lg-1">
+            <div class="col-12 d-none d-lg-block col-lg-3 offset-lg-1">
               <img src="@/assets/images/youtubelogo.png" alt="YouTube Logo">
             </div>
           </div>
           <br />
           <div class="row">
-            <div class="col-12 col-lg-3">
+            <div class="col-12 d-none d-lg-block col-lg-3">
               <img src="@/assets/images/patienttekent.png" alt="Patient tekent een tekening en kleurt hem in">
             </div>
 
-            <div class="col-12 col-lg-4 offset-lg-1">
+            <div class="col-12 d-none d-xl-block col-xl-4 offset-xl-1">
               <div class="telefoon-iconimage">
                 <img src="@/assets/images/telefoonapp.png" alt="Telefoon Icoon">
               </div>
             </div>
 
-            <div class="col-12 col-lg-3 offset-lg-1">
+            <div class="col-12 col-lg-8 offset-lg-1 col-xl-3 offset-xl-1">
               <h4>Mobiele App</h4>
               <p>De activiteiten die de verzorger in het online dashboard programmeert, worden naar de Robin app van de persoon gestuurd. Wanneer het tijd is om een activiteit uit te voeren, zal de app de persoon op de hoogte stellen via een waarschuwing of melding. Dit zal hen vragen om de geplande activiteit te openen in de Robin app, die automatisch elke stap toont die moet worden gevolgd om de activiteit te voltooien. Elke stap wordt zorgvuldig uitgelegd met spraak, tekst en afbeeldingen. Robin geeft ook aan hoeveel tijd de persoon maximaal mag nemen voor elke stap en laat hem de instructie van elke stap herhalen, indien nodig. Nadat alle stappen in de activiteit zijn voltooid, keert de Robin app terug naar de kalender om de geplande taken voor die dag of week te tonen. Wanneer de applicatie wordt gesloten, blijft deze inactief totdat het tijd is voor een nieuwe activiteit.</p>
             </div>
@@ -129,7 +130,9 @@
       </v-copy>
     </div>
 
-    <v-contact></v-contact>
+    <v-contact id="Contact"></v-contact>
+
+    <v-footer @scrollTo="(component) => scrollTo(component)"></v-footer>
   </div>
 </template>
 
@@ -139,6 +142,7 @@ import LandingHeader from '@/components/LandingHeader.vue'
 import Copy from '@/components/Copy.vue'
 import ConvinceYouLogin from '@/components/ConvinceYouLogin.vue'
 import Contact from '@/components/Contact.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
@@ -147,12 +151,14 @@ export default {
     'v-landing-header': LandingHeader,
     'v-copy': Copy,
     'v-convince-you-login': ConvinceYouLogin,
-    'v-contact': Contact
+    'v-contact': Contact,
+    'v-footer': Footer
   },
 
   methods: {
     scrollTo (component) {
       document.getElementById(component).scrollIntoView()
+      // console.log(component)
     }
   }
 }

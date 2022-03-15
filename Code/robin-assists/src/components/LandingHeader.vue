@@ -5,7 +5,7 @@
                 jouw dagelijkse assistent
             </h1>
 
-            <router-link to="/#WatIsRobin" class="continue-button">Leer meer</router-link>
+            <button @click="$emit('scrollTo', 'WatIsRobin')" class="continue-button">Leer meer</button>
         </div>
     </div>
 </template>
