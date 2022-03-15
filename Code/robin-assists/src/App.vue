@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view />
+    <v-home></v-home>
   </div>
 </template>
 
@@ -15,7 +15,11 @@
 </style>
 
 <script>
-export default {
+import Home from '@/views/Home.vue'
 
+export default {
+  components: {
+    'v-home': Home
+  }
 }
 </script>

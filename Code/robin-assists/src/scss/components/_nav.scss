@@ -1,21 +1,33 @@
 #nav {
     padding: 10px 0;
 
+    @media screen and (max-width: $medium) {
+        text-align: left;
+
+        .nav-links {
+            text-align: center;
+            button, a {
+                display: block;
+                margin: 2rem auto;
+            }
+        }
+    }
+
     @media screen and (min-width: $medium) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: $large) {
         display: flex;
         align-items: center;
     }
 
-    @media screen and (min-width: $large) {
+    @media screen and (min-width: $extralarge) {
         .nav-links {
             display: flex;
             justify-content: right;
             align-items: center;
         }
-    }
-
-    @media screen and (max-width: 807px) {
-        text-align: center;
     }
 
     img {

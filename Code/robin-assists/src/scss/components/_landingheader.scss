@@ -31,4 +31,15 @@
         margin-top: 2rem;
         border: none;
     }
+
+    @media screen and (max-width: $medium) {
+        font-size: 50vw;
+        .welcome-text {
+            width: 100%;
+        }
+        
+        h1 {
+            font-size: 7vw;
+        }
+    }
 }

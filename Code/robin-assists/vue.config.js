@@ -7,5 +7,9 @@ module.exports = {
         args[0].title = 'Robin Assistant'
         return args
       })
-    }
+    },
+
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/'
+    : '/'
 }
