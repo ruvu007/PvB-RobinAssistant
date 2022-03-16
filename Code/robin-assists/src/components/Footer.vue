@@ -30,7 +30,7 @@
             </div>
 
             <div class="row">
-                <div class="col-12 col-lg-4 offset-lg-8">
+                <div class="col-12 text-center mt-5">
                     <p>© ℗ ® Bemika Software 2015-2022. All rights reserved.</p>
                 </div>
             </div>
